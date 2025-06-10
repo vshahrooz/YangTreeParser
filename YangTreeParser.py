@@ -1,15 +1,12 @@
 
 
-#yang_file = r"C:\Users\sh.vizheh\Desktop\public-master\release\models\interfaces\openconfig-interfaces.yang"
 
-
-#yang_modules_dir = r"C:\Users\sh.vizheh\Desktop\public-master\release\models"
 
 import os
 import subprocess
 
 # Replace this with your YANG filename (must be in the same folder or full path)
-YANG_FILE = r"C:\Users\sh.vizheh\Desktop\public-master\release\models\interfaces\openconfig-interfaces.yang"
+YANG_FILE = r"\public-master\release\models\interfaces\openconfig-interfaces.yang"
 
 def run_pyang_tree():
     """
