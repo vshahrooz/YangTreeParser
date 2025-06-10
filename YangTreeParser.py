@@ -23,12 +23,12 @@ def run_pyang_tree():
         ]
         result = subprocess.run(cmd, capture_output=True, text=True)
         if result.returncode != 0:
-            print("❌ pyang error or missing module dependencies:")
+            print("pyang error or missing module dependencies:")
             print(result.stderr)
             return None
         return result.stdout
     except FileNotFoundError:
-        print("❌ pyang is not installed or not found in PATH.")
+        print("pyang is not installed or not found in PATH.")
         return None
 
 def parse_tree_and_build_paths(tree_str):
@@ -90,7 +90,7 @@ def main():
 
     save_paths_to_file(paths, output_path)
 
-    print(f"✅ Paths saved to {output_path}")
+    print(f"Paths saved to {output_path}")
 
 if __name__ == "__main__":
     main()
